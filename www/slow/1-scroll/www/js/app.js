@@ -26,5 +26,9 @@ angular.module('starter', ['ionic'])
 .controller('IndexController', ['$scope', function($scope) {
   $scope.handleScroll = function() {
     console.log('scrolling!');
-  }
-}]);
+  };
+
+  $scope.backToList = function() {
+    window.location.href = "../../../index.html";
+  };
+}])
