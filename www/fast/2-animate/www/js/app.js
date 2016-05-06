@@ -31,4 +31,4 @@ angular.module('starter', ['ionic'])
   $scope.backToList = function() {
     window.location.href = "../../../index.html";
   };
-}])
+}]);

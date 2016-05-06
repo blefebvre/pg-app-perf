@@ -17,8 +17,6 @@
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
     <script src="../../../cordova.js"></script>
-    <!-- Support running the app either from the top level, or standalone -->
-    <script src="./cordova.js"></script>
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
@@ -28,24 +26,34 @@
     <ion-pane ng-controller="IndexController">
       <ion-header-bar class="bar-stable">
         <button ng-click="backToList()" class="button button-icon icon ion-chevron-left"></button>
-        <h1 class="title">Scroll Example - slow</h1>
+        <h1 class="title">Animation - slow</h1>
       </ion-header-bar>
-      <ion-content on-scroll="handleScroll()" overflow-scroll="false">
-        <img src="img/IMG_5557.jpg"/>
-        <img src="img/IMG_1418.jpg"/>
-        <img src="img/IMG_1578.jpg"/>
-        <img src="img/IMG_1592.jpg"/>
-        <img src="img/IMG_1762.jpg"/>
-        <img src="img/DSC_0018.jpg"/>
-        <img src="img/IMG_0347.jpg"/>
-        <img src="img/IMG_0671.jpg"/>
-        <img src="img/IMG_0676.jpg"/>
-        <img src="img/IMG_5848.jpg"/>
-        <img src="img/IMG_5731.jpg"/>
-        <img src="img/IMG_5708.jpg"/>
-        <img src="img/IMG_5525.jpg"/>
-        <img src="img/IMG_5171.jpg"/>
+      <ion-content on-scroll="handleScroll()" overflow-scroll="true">
+        
+        <!-- Animated boxes content -->
+        <div class="animatedBox" 
+            style="left: 10px; background-color: red"
+            data-speed="2">
+        </div>
+
+        <div class="animatedBox" 
+            style="left: 150px; background-color: green"
+            data-speed="4">
+        </div>
+
+        <div class="animatedBox" 
+            style="left: 100px; background-color: blue"
+            data-speed="5">
+        </div>
+
+        <div class="animatedBox" 
+            style="left: 200px; background-color: purple"
+            data-speed="7">
+        </div>
       </ion-content>
     </ion-pane>
+    
+    <!-- Animated boxes script -->
+    <script src="js/animated-boxes.js"></script>
   </body>
 </html>
