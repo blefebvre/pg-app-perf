@@ -67,8 +67,7 @@
           window.requestAnimationFrame(frame);
         }
       };
-      // Register mouse and touch handlers 
-      box.addEventListener('mousedown', clickHandler, false);
+      // Register touch handler
       box.addEventListener('touchstart', clickHandler, false);
     })(boxes[i]);
   }

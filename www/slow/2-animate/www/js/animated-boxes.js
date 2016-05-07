@@ -17,22 +17,39 @@
         }
         else {
           // Animate element
-          var speed = parseInt(box.dataset.speed);
+          var xspeed = parseInt(box.dataset.xspeed);
+          var yspeed = parseInt(box.dataset.yspeed);
           // Get the int value of how far left the box is
-          var elementLeft = parseInt(box.style.left.replace('px', ''));
+          
           frameTimer = setInterval(function frame() {
-            var rightEdge = elementLeft + box.offsetWidth;
-            var bodyWidth = document.body.offsetWidth;
-            if ((speed > 0 && rightEdge >= bodyWidth) ||
-                (speed < 0 && elementLeft <= 0)) {
+            var boxRect = box.getBoundingClientRect();
+            var bodyWidth = box.parentElement.offsetWidth;
+            var bodyHeight = box.parentElement.offsetHeight;
+            
+            // Check x edges
+            var leftEdge = parseInt(box.style.left.replace('px', ''));
+            var rightEdge = leftEdge + box.offsetWidth;
+            if ((xspeed > 0 && rightEdge >= bodyWidth) ||
+                (xspeed < 0 && leftEdge <= 0)) {
               // Flip direction
-              speed = speed * -1;
-              console.log('reversing!');
+              xspeed = xspeed * -1;
             }
-
-            // Move the box
-            elementLeft = elementLeft + speed
-            box.style.left = elementLeft + 'px';
+            // Move the box horizontally
+            leftEdge = leftEdge + xspeed;
+            box.style.left = leftEdge + 'px';
+            
+            // Check y edges
+            var topEdge = parseInt(box.style.top.replace('px', ''));
+            var bottomEdge = topEdge + box.offsetHeight;
+            if ((yspeed > 0 && bottomEdge >= bodyHeight) ||
+                (yspeed < 0 && topEdge <= 0)) {
+              // Flip direction
+              yspeed = yspeed * -1;
+            }
+            
+            // Move the box vertically
+            topEdge = topEdge + yspeed;
+            box.style.top = topEdge + 'px';
 
           }, 15); // Fire this interval every 10 millis
           isAnimationRunning = true;

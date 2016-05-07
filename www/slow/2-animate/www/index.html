@@ -21,37 +21,35 @@
     <!-- your app's js -->
     <script src="js/app.js"></script>
   </head>
-  <body ng-app="starter">
-
-    <ion-pane ng-controller="IndexController">
-      <ion-header-bar class="bar-stable">
-        <button ng-click="backToList()" class="button button-icon icon ion-chevron-left"></button>
-        <h1 class="title">Animation - slow</h1>
-      </ion-header-bar>
-      <ion-content on-scroll="handleScroll()" overflow-scroll="true">
+  <body ng-app="starter" ng-controller="IndexController">
+    <button ng-click="backToList()" class="button button-icon icon ion-chevron-left"></button>
+      <div class="content">
         
         <!-- Animated boxes content -->
         <div class="animatedBox" 
-            style="left: 10px; background-color: red"
-            data-speed="2">
+            style="left: 10px; top: 10px; background-color: red"
+            data-xspeed="2"
+            data-yspeed="2">
         </div>
 
         <div class="animatedBox" 
-            style="left: 150px; background-color: green"
-            data-speed="4">
+            style="left: 150px; top:80px; background-color: green"
+            data-xspeed="4"
+            data-yspeed="4">
         </div>
 
         <div class="animatedBox" 
-            style="left: 100px; background-color: blue"
-            data-speed="5">
+            style="left: 100px; top: 150px; background-color: blue"
+            data-xspeed="5"
+            data-yspeed="5">
         </div>
 
         <div class="animatedBox" 
-            style="left: 200px; background-color: purple"
-            data-speed="7">
+            style="left: 200px; top: 220px; background-color: purple"
+            data-xspeed="7"
+            data-yspeed="7">
         </div>
-      </ion-content>
-    </ion-pane>
+      </div>
     
     <!-- Animated boxes script -->
     <script src="js/animated-boxes.js"></script>
