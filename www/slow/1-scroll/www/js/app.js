@@ -24,8 +24,13 @@ angular.module('starter', ['ionic'])
 })
 
 .controller('IndexController', ['$scope', function($scope) {
+  var contentPane = document.querySelector("#content-pane .scroll");
   $scope.handleScroll = function() {
     console.log('scrolling!');
+    // Figure out the distance from the top of the page
+    console.log('scrollTop: ' + contentPane.scrollTop);
+    // Note: this will always be 0, since we're using JS scrolling.
+    // But it's still a costly thing to try and calculate.
   };
 
   $scope.backToList = function() {
