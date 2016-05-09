@@ -1,11 +1,11 @@
 var browserPerf = require('browser-perf');
 var browsers = require('./browsers/iphone-6s-9.3');
-var scrollActions = require('./actions/scroll-ion-content');
+var runAnimations = require('./actions/run-animations');
 var metrics = require('./metrics/metrics');
 var util = require('util');
 
 // Location of the sample to test
-var linkHref = 'slow/1-scroll/www/index.html';
+var linkHref = 'slow/2-animate/www/index.html';
 var preScript = require('./pre-scripts/navigate-to-sample')(linkHref);
 
 var options = {
@@ -17,7 +17,7 @@ var options = {
 	// Record the following metrics
 	metrics: metrics,
 	// Scroll a specific element for the test action
-	actions: scrollActions
+	actions: runAnimations
 };
 
 // First param is the URL to test - N/A for Cordova apps

@@ -4,7 +4,7 @@ var scrollActions = require('./actions/scroll-ion-content');
 var metrics = require('./metrics/metrics');
 var util = require('util');
 
-// href of the sample to test
+// Location of the sample to test
 var linkHref = 'fast/1-scroll/www/index.html';
 var preScript = require('./pre-scripts/navigate-to-sample')(linkHref);
 

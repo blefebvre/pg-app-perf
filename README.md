@@ -24,4 +24,9 @@ Run the browser-perf tests:
 
 #### Scrolling
 
-	$
+	$ node tests/1-slow-scroll.js
+	$ node tests/1-fast-scroll.js
+
+#### Animation
+
+	
