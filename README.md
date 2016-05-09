@@ -29,4 +29,9 @@ Run the browser-perf tests:
 
 #### Animation
 
-	
+## Appendix
+
+Find available install targets:
+
+	$ phonegap run --list -d
+

@@ -2,10 +2,10 @@ var currentDir = __dirname;
 
 module.exports = [
 	{
-		'app': currentDir + '/../../platforms/ios/build/emulator/1-scroll.app',
-		'bundleId': 'com.brucelefebvre.pg-app-perf',
+		'app': currentDir + '/../../platforms/ios/build/emulator/PerfSample.app',
+		'bundleId': 'com.brucelefebvre.PGAppPerf',
 		'platformName': 'iOS',
-		'platformVersion': '9.3',
+		'platformVersion': '9.2',
 		'deviceName': 'iPhone 6s',
 		'autoWebview': true
 	}

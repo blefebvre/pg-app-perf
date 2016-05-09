@@ -1,0 +1,17 @@
+html, body, .content {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+	padding-top: 20px;
+}
+
+.animatedBox {
+  height: 50px;
+  width: 50px;
+  position:relative;
+  margin-bottom: 20px;
+  will-change: transform;
+}

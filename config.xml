@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.brucelefebvre.pg-app-perf" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>1-scroll</name>
+<widget id="com.brucelefebvre.PGAppPerf" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>PerfSample</name>
     <description>
-        An Ionic Framework and Cordova project.
+        An app to showcase common performance issues.
     </description>
-    <author email="you@example.com" href="http://example.com.com/">
-      Your Name Here
+    <author email="bruce@brucelefebvre.com" href="http://brucelefebvre.com/">
+      Bruce Lefebvre
     </author>
     <content src="index.html" />
     <access origin="*" />
