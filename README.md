@@ -3,16 +3,25 @@ pg-app-perf
 
 ## Requirements
 
-- phonegap cli `>= 6.2.0`
 - node `>= 4.3.0`
-- (iOS) Xcode `>= 7.3`
+- PhoneGap cli `>= 6.2.0`
+- appium `== 1.5.2`
+- browser-perf `== 1.4.5`
+- PhoneGap Developer app
+- (iOS) Xcode `== 7.3`
 
-## 1-scroll
+## Run
 
-	$ cd slow/1-scroll/
-	# or
-	$ cd fast/1-scroll/
+	$ phonegap serve
 
-	$ phonegap run ios
+## browser-perf Tests
 
-## 
+Build the app for iOS at least once:
+
+	$ phonegap build ios
+
+Run the browser-perf tests:
+
+#### Scrolling
+
+	$
