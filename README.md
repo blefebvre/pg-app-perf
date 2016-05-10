@@ -12,20 +12,29 @@ pg-app-perf
 
 ## Run
 
+	$ npm install
 	$ phonegap serve
 
 ## browser-perf Tests
 
-Build the app for iOS at least once:
+Build the app for each platform at least once:
 
-	$ phonegap build ios
+	$ phonegap build ios && phonegap build android
 
-Run the browser-perf tests:
+Run the browser-perf tests.
 
-#### Scrolling
+#### Test: Scrolling
 
-	$ node tests/1-slow-scroll.js
-	$ node tests/1-fast-scroll.js
+iOS
+
+	$ node tests/ios/1-slow-scroll.js
+	$ node tests/ios/1-fast-scroll.js
+
+Android
+
+	$ node tests/android/1-slow-scroll.js
+	$ node tests/android/1-fast-scroll.js
+
 
 #### Animation
 
