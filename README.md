@@ -5,10 +5,10 @@ pg-app-perf
 
 - node `>= 4.3.0`
 - PhoneGap cli `>= 6.2.0`
-- appium `== 1.5.2`
-- browser-perf `== 1.4.5`
 - PhoneGap Developer app
+- (iOS) Appium `== 1.5.2`
 - (iOS) Xcode `== 7.3`
+- (Android) ChromeDriver `== 2.21`
 
 ## Run
 

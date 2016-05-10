@@ -1,12 +1,12 @@
 var browserPerf = require('browser-perf');
-var browsers = require('./browsers/iphone-6s-9.3');
-var runAnimations = require('./actions/run-animations');
-var metrics = require('./metrics/metrics');
+var browsers = require('../browsers/iphone-6s-9.3');
+var runAnimations = require('../actions/run-animations');
+var metrics = require('../metrics/metrics');
 var util = require('util');
 
 // Location of the sample to test
 var linkHref = 'slow/2-animate/www/index.html';
-var preScript = require('./pre-scripts/navigate-to-sample')(linkHref);
+var preScript = require('../pre-scripts/navigate-to-sample')(linkHref);
 
 var options = {
 	// Use local Appium
