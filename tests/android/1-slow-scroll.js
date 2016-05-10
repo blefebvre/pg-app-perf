@@ -24,7 +24,8 @@ var options = {
 browserPerf(null, 
 	function(err, res){
 		if (err) {
-			return console.error('Error: ' + err);
+			// print error, but don't return
+			console.error('Error: ' + util.inspect(err, {showHidden: false, depth: null}));
 		}
 		// else: success
 		console.log("--- Begin test results ---");

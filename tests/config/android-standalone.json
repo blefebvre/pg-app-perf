@@ -1,10 +1,10 @@
-
-module.exports = [
-	{
+{
+	"selenium": "localhost:9515",
+	"browsers": [{
 		"browserName": "android",
 		"chromeOptions": {
 			"androidActivity": "com.brucelefebvre.PGAppPerf.MainActivity",
 			"androidPackage": "com.brucelefebvre.PGAppPerf"
 		}
-	}
-];
+	}]
+}

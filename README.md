@@ -27,10 +27,24 @@ Run the browser-perf tests.
 
 iOS
 
+Run appium:
+
+	$ appium
+
+Run the tests. Results will be printed to the console:
+
 	$ node tests/ios/1-slow-scroll.js
 	$ node tests/ios/1-fast-scroll.js
 
 Android
+
+App must be installed on test device (and running):
+
+	$ phonegap run android --device
+
+Run ChromeDriver:
+
+	$ chromedriver
 
 	$ node tests/android/1-slow-scroll.js
 	$ node tests/android/1-fast-scroll.js
