@@ -1,12 +1,12 @@
 {
-  "name": "1-scroll",
+  "name": "pg-perf-sample",
   "version": "0.0.1",
-  "description": "sample to demonstrate performance of cordova apps",
+  "description": "Sample to demonstrate a few performance scenarios in PhoneGap apps",
   "main": "www/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "blefebvr",
+  "author": "blefebvre",
   "license": "MIT",
   "devDependencies": {
     "browser-perf": "^1.4.5",
