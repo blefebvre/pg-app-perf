@@ -6,7 +6,7 @@ var util = require('util');
 
 // Location of the sample to test
 var linkHref = 'slow/1-scroll/www/index.html';
-var preScript = require('../pre-scripts/navigate-to-sample')(linkHref);
+var preScript = require('../pre-scripts/navigate-to-sample-with-long-pause')(linkHref);
 
 var options = {
 	// Use ChromeDriver port
