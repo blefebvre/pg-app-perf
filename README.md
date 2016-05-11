@@ -1,5 +1,5 @@
-pg-app-perf
-===========
+PhoneGap Runtime Perf Sample
+============================
 
 ## Requirements
 
@@ -33,17 +33,17 @@ Run appium:
 
 	$ appium
 
-Run the tests. Results will be printed to the console:
-
-	$ node tests/ios/1-slow-scroll.js
-	$ node tests/ios/1-fast-scroll.js
-
 Note, to run the tests on a real device, you will need to run
 [ios_webkit_debug_proxy on port :27753](http://appium.io/slate/en/master/?javascript#ios-webkit-debug-proxy.md). Make sure to replace `<device UDID>` with yours:
 
 	$ ios_webkit_debug_proxy -c <device UDID>:27753 -d
 
 Make sure UI automation is enabled on the iOS device, via Settings > Developer > "Enable UI Automation".
+
+Run the tests. Results will be printed to the console:
+
+	$ node tests/ios/1-slow-scroll.js
+	$ node tests/ios/1-fast-scroll.js
 
 
 ##### Android
@@ -66,7 +66,10 @@ Run the tests:
 
 ## Appendix
 
-Find available install targets:
+Find available install targets, including UDIDs of physical devices:
 
 	$ phonegap run --list -d
 
+Build and run the app targeting a specific device UDID: 
+	
+	$ phonegap run ios --device --target <device UDID> -d

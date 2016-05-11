@@ -5,7 +5,7 @@ var metrics = require('../metrics/metrics');
 var util = require('util');
 
 // Location of the sample to test
-var linkHref = 'slow/3-animate-2d/www/index.html';
+var linkHref = 'fast/3-animate-2d-top-left/www/index.html';
 var preScript = require('../pre-scripts/navigate-to-sample')(linkHref);
 
 var options = {

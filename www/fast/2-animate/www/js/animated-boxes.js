@@ -50,7 +50,8 @@
       };
       // Register mouse and touch handlers 
     	//box.addEventListener('mousedown', clickHandler, false);
-    	box.addEventListener('touchstart', clickHandler, false);
+    	//box.addEventListener('touchstart', clickHandler, false);
+      box.addEventListener('click', clickHandler, false);
     })(boxes[i]);
   }
 })();

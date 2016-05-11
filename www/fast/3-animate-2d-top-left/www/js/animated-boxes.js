@@ -62,7 +62,8 @@
         }
       };
       // Register touch handler
-      box.addEventListener('touchstart', clickHandler, false);
+      //box.addEventListener('touchstart', clickHandler, false);
+      box.addEventListener('click', clickHandler, false);
     })(boxes[i]);
   }
 })();
