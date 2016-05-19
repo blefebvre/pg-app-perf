@@ -3,7 +3,7 @@ PhoneGap Runtime Perf Sample
 
 ## About
 
-This repo was created in support of my PhoneGap Day EU talk, which can be [found here](https://docs.google.com/presentation/d/1--nCyt1cERy3VKxX4Hwe9wM0Nvkdk4tkv6Uq-Ju0tkY/edit?usp=sharing). 
+This repo was created in support of my PhoneGap Day EU talk, which can be [found here](https://docs.google.com/presentation/d/1--nCyt1cERy3VKxX4Hwe9wM0Nvkdk4tkv6Uq-Ju0tkY/edit?usp=sharing). It contains a PhoneGap application that showcases a few performance scenarios - with both fast and slow implementations - and browser-perf test cases to meter them.
 
 ## Requirements
 
