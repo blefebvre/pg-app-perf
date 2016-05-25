@@ -9,7 +9,7 @@
   "author": "blefebvre",
   "license": "MIT",
   "devDependencies": {
-    "browser-perf": "^1.4.5",
+    "browser-perf": "^1.4.7",
     "perfjankie": "^2.1.1",
     "wd": "^0.4.0"
   }
