@@ -14,7 +14,7 @@ This repo was created in support of my PhoneGap Day EU talk, which can be [found
 - (iOS) Xcode `== 7.3` 
 - (iOS, for real devices) ideviceinstaller: `brew install ideviceinstaller`
 - (iOS, for real devices) ios-webkit-debug-proxy: `brew install ios-webkit-debug-proxy`
-- (Android) ChromeDriver `== 2.21`
+- (Android) ChromeDriver `== 2.24`: ([download here](https://sites.google.com/a/chromium.org/chromedriver/downloads))
 
 
 ## Run the app
